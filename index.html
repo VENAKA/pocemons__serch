@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-inline search-form js-search-form">
+        <div class="form-group">
+            <input type="text" class="form-control" name="query" />
+        </div>
+        <button class="btn btn-primary">Шукати</button>
+    </div>
+
+    <div class="js-card-container"></div>
+
+    <!-- Шаблон Handlebars -->
+    <script id="pokemon-template" type="text/x-handlebars-template">
+        <div class="card">
+            <div class="card-img-top">
+                <img src="{{sprites.front_default}}" alt="{{name}}" >
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Ім'я: {{name}}</h2>
+                <p class="card-text">Вага: {{weight}}</p>
+                <p class="card-text">Зріст: {{height}}</p>
+                <p class="card-text"><b>Вміння:</b></p>
+                <ul class="list-group">
+                    {{#each abilities}}
+                        <li class="list-group-item">{{ability.name}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </script>
+
+    <!-- Підключення Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- Ваш JavaScript код -->
+    <script src="scriprt.js"></script>
+</body>
+</html>

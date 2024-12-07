@@ -1,0 +1,53 @@
+body{
+    background-color: #cb9753;
+}
+.form-control{
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+    background-color: rgb(217, 255, 255);
+    color: #121414;
+    border: 5px solid #7c5e03;
+    border-radius: 10px;
+    box-shadow:0 6px 3px #000;
+    margin: 50px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: #8a9308;
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #121414;
+    margin: 10px auto;
+}
+.form-inline{
+    padding: auto;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 250px;
+    height: 350px;
+    border: 5px solid #3b3b3b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2c994;
+    margin: 30px auto;
+}
+
